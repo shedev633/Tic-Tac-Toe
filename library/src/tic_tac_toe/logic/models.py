@@ -34,3 +34,11 @@ def o_count(self) -> int:
 def empty_count(self) -> int:
     return self.cells.count(" ")
 
+@dataclass(frozen=True)
+class Move:
+    mark: Mark
+    cell_index: int
+    before_state: "GameState"
+    after_state:
+
+
